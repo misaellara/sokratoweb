@@ -224,13 +224,13 @@
     /* -------------------
     Smooth scrolling to anchor
     ---------------------*/
-    $('.to-section a,.btn-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 54
-        }, 1000, 'easeInOutExpo');
-        event.preventDefault();
-    });
+    //$('.to-section a,.btn-scroll').bind('click', function(event) {
+    //    var $anchor = $(this);
+    //    $('html, body').stop().animate({
+    //        scrollTop: $($anchor.attr('href')).offset().top - 54
+    //    }, 1000, 'easeInOutExpo');
+    //    event.preventDefault();
+    //});
     /* -------------------
     Back to top button function
     ---------------------*/

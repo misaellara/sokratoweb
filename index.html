@@ -15,8 +15,46 @@
         <!-- Stlylesheet -->
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         
+        
         <!-- Skin Color -->
         <link rel="stylesheet" href="css/colors/red.css" id="color-skins"/> 
+        
+        <style>
+            .content-popup{
+                display: none;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background: black;
+                z-index: 10000;
+                top: 0;
+                right: 0;
+            }
+            
+        </style>
+        
+        
+        
+        <div id="popup">
+            <div class="content-popup">
+                <div class="close"><a href="javascript:void(0)" id="close">X</a></div>
+                <div>
+                    <p class="grey">Todo ello debía tener unos estándares muy claros: sencillez, facilidad de uso, atractivas e innovadoras funciones y costos asequibles sin necesidad de altas inversiones.</p>
+
+                    <p class="grey">Su nombre no es casual, considera a Sócrates como uno de los sabios de la antigüedad, le hacemos homenaje a este sabio.</p>
+
+                    <p class="grey">Sokrato cuenta con una experiencia de cinco años como herramienta, pero no es hasta el 2015 que se constituye formalmente en una empresa física. Cada vez con más mejoras y personalización de sus funciones. </p>
+
+                    <p class="grey">En tan sólo un año hemos pasado de 2 a 20 profesionales altamente capacitados en el “Sokrato Team”.</p>
+
+                    <p class="grey">Podemos decir que aquella “oportunidad” en el año 2010 actualmente es una gran realidad gracias a muchas personas, muchas ideas innovadoras, mucho esfuerzo y un sueño.</p>
+
+                    <p class="grey">“Como no sabíamos que era imposible, lo estamos haciendo posible¨…</p>
+                </div>
+            </div>
+        </div>
+        
+        
         
 	</head>
 	<body> 
@@ -293,7 +331,13 @@
             
             <!-- Start Features Section -->
             <section id="features">
-                <div class="container">                      
+                <div class="container"> 
+                    
+                    <div class="col-md-12 text-center wow fadeInUp">
+                        <h3 class="section-title">Nuestros servicios</h3> 
+                        <p class="subheading">Interdisciplinary team with <span class="highlight">big ideas</span> and challenges.</p>
+                    </div>
+                    
                     <div class="row features-row wow fadeInUp">
                         
                         <div class="col-md-4 col-sm-12 feature-column">
@@ -303,7 +347,7 @@
                             </div>
                             <div class="feature-info">
                                 <h4>Diseño página web</h4>
-                                <p class="feature-description">desarrollamos espacios digitales personales, empresariales e industriales a la medida de lo que nuestros clientes necesiten. ¡Al mejor precio del mercado!</p>
+                                <p class="feature-description">Desarrollamos espacios digitales personales, empresariales e industriales a la medida de lo que nuestros clientes necesiten. ¡Al mejor precio del mercado!</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12 feature-column">
@@ -313,7 +357,7 @@
                             </div>
                             <div class="feature-info">
                                 <h4>Identidad visual</h4>
-                                <p class="feature-description">construimos la imagen visual de tu empresa, para que puedas optimizar tus resultados. Impulsamos tu presencia visual al mejor nivel.</p>
+                                <p class="feature-description">Construimos la imagen visual de tu empresa, para que puedas optimizar tus resultados. Impulsamos tu presencia visual al mejor nivel.</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12 feature-column">
@@ -323,7 +367,7 @@
                             </div>
                             <div class="feature-info">
                                 <h4>Aplicaciones móviles</h4>
-                                <p class="feature-description">¿buscas la forma de llegar más allá de lo tradicional? Insertarte en el mercado de las aplicaciones para teléfonos inteligentes es un plus. Te ofrecemos el mejor diseño y programación, facilitando las gestiones o actividades de tus clientes.
+                                <p class="feature-description">¿Buscas la forma de llegar más allá de lo tradicional? Insertarte en el mercado de las aplicaciones para teléfonos inteligentes es un plus. Te ofrecemos el mejor diseño y programación, facilitando las gestiones o actividades de tus clientes.
 </p>
                             </div>
                         </div>
@@ -339,7 +383,7 @@
                             </div>
                             <div class="feature-info">
                                 <h4>Diseño de correos institucionales</h4>
-                                <p class="feature-description">si necesitas en tu empresa que la comunicación interna y externa sea eficiente, esta herramienta es para ti. Deja de lado el uso de Gmail y Hotmail, crea más allá de tu nombre, una experiencia.
+                                <p class="feature-description">Si necesitas en tu empresa que la comunicación interna y externa sea eficiente, esta herramienta es para ti. Deja de lado el uso de Gmail y Hotmail, crea más allá de tu nombre, una experiencia.
 </p>
                             </div>
                         </div>
@@ -350,7 +394,7 @@
                             </div>
                             <div class="feature-info">
                                 <h4>Consultoría o asesoramiento de identidad e imagen visual</h4>
-                                <p class="feature-description">en el mercado existen empresas dedicadas a lo mismo que la suya y esos elementos que te diferencian deben tener concordancia absoluta. ¡Haremos que eso sea posible por ti, por tu empresa, por lo mejor!
+                                <p class="feature-description">En el mercado existen empresas dedicadas a lo mismo que la suya y esos elementos que te diferencian deben tener concordancia absoluta. ¡Haremos que eso sea posible por ti, por tu empresa, por lo mejor!
 .</p>
                             </div>
                         </div>
@@ -361,7 +405,7 @@
                             </div>
                             <div class="feature-info">
                                 <h4>Programación de páginas webs y aplicaciones webs</h4>
-                                <p class="feature-description">¿las funcionalidades de tu página y/o aplicación no rinden al 100%? No es algo imposible, lo solucionaremos por y para ti. Pondremos en tus manos el poder darle vida tus sistemas.</p>
+                                <p class="feature-description">¿Las funcionalidades de tu página y/o aplicación no rinden al 100%? No es algo imposible, lo solucionaremos por y para ti. Pondremos en tus manos el poder darle vida tus sistemas.</p>
                             </div>
                         </div>
                         
@@ -376,22 +420,18 @@
                     <div class="row">
                         
                         <div class="col-md-6 text-left about-text">
-                            <h2 class="content-title white wow fadeInUp">About us.</h2>          
+                            <h2 class="content-title white wow fadeInUp">Sobre Nosotros</h2>          
                             <p class="grey wow fadeInUp">Sokrato nace como resultado de una “oportunidad”. Tras participar su fundador en un proyecto con tres prestigiosas empresas a nivel mundial se le asignó la parte del proyecto de liderazgo y coaching. Para poder implementar las necesidades que surgían en este nivel nació Sokrato como una herramienta, no como una empresa en sí misma.
 </p> 
 				            <p class="grey wow fadeInUp">Tras esta experiencia surgió un sueño, un “sueño de ojos abiertos”: crear una empresa más allá de tan solo una herramienta. Así nació Sokrato Management como empresa de tecnología e-bussines y cloud computing, desarrollando soluciones virtuales para diferentes áreas corporativas.</p>
                             
-				            <p class="grey wow fadeInUp">Todo ello debía tener unos estándares muy claros: sencillez, facilidad de uso, atractivas e innovadoras funciones y costos asequibles sin necesidad de altas inversiones.</p>
+				            
                             
-				            <p class="grey wow fadeInUp">Su nombre no es casual, considera a Sócrates como uno de los sabios de la antigüedad, le hacemos homenaje a este sabio.</p>
+                            <div><a id="open-tcl" class="btn btn-primary btn-scroll cd-popup-trigger">leer más</a></div>
+ 
                             
-				            <p class="grey wow fadeInUp">Sokrato cuenta con una experiencia de cinco años como herramienta, pero no es hasta el 2015 que se constituye formalmente en una empresa física. Cada vez con más mejoras y personalización de sus funciones. </p>
                             
-				            <p class="grey wow fadeInUp">En tan sólo un año hemos pasado de 2 a 20 profesionales altamente capacitados en el “Sokrato Team”.</p>
                             
-				            <p class="grey wow fadeInUp">Podemos decir que aquella “oportunidad” en el año 2010 actualmente es una gran realidad gracias a muchas personas, muchas ideas innovadoras, mucho esfuerzo y un sueño.</p>
-                            
-				            <p class="grey wow fadeInUp">“Como no sabíamos que era imposible, lo estamos haciendo posible¨…</p>
                         </div>
                         
                         <div class="col-md-6 wow fadeInUp">
@@ -871,7 +911,9 @@
         </div> <!-- End Site Wrapper --> 
         
         <!-- jQuery -->
-        <script src="js/plugins/jquery.min.js"></script>
+      
+             
+          <script src="js/plugins/jquery.min.js"></script>
         <script src="js/plugins/moderniz.min.js"></script>
         <script src="js/plugins/smoothscroll.min.js"></script>
         <script src="js/plugins/revslider.min.js"></script> 
@@ -886,7 +928,21 @@
         <script src="js/plugins/gmap3.min.js"></script>
         <script src="js/plugins/wow.min.js"></script>
         <script src="js/plugins/counterup.min.js"></script> 
-		<script src="js/scripts.js"></script>  
-        
+		<script src="js/scripts.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+          $('#open-tcl').on('click',function(){
+                $('.content-popup').fadeIn(1000);
+                $('#popup').fadeIn(1000);
+                return ;
+            });
+
+            $('#close').on('click',function(){
+                $('#popup').fadeOut(1000);
+                $('.popup-overlay').fadeOut(1000);
+                return ;
+            });
+        });
+        </script>                  
 	</body>
 </html>

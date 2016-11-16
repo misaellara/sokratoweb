@@ -2175,7 +2175,7 @@ textarea {
 	color:#1c1c1c; 
 }
 
-#contact input.submit { 
+#contact input.submit, button.showmore { 
     width: auto!important;
 	font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -2212,7 +2212,7 @@ textarea {
     -webkit-transition: opacity 0.3s linear;
     -o-transition: opacity 0.3s linear;
 }
-#contact input.submit:hover { 
+#contact input.submit:hover{ 
 	opacity: .7;
 }
 #contact input[type="submit"][disabled] { background:#888; }
