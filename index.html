@@ -11,6 +11,7 @@
         <meta name="author" content="Vossen Design"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
        	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="fonts/icons/style.css">
         
         <!-- Stlylesheet -->
         <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -25,20 +26,90 @@
                 position: fixed;
                 width: 100%;
                 height: 100%;
-                background: black;
+                background: rgba(0, 0, 0, 0.8);;
                 z-index: 10000;
                 top: 0;
                 right: 0;
+                overflow-y: auto;
+            }
+            .content-1{
+                max-width: 700px;
+                width: 100%;
+                margin: 11em auto;
+                background: #f9f9f9;
+                border-radius: 4px;
+                padding: 10px 50px 40px;
+                position: relative;
+                
+            }
+            .content-1 p{
+                color: #7a7a7a;
+            }
+            .margin-button1{
+                margin-bottom: 2em;
             }
             
+            .close{
+                background: #24C0DE;
+                border-radius: 100%;
+                opacity: 1 !important;
+                position: absolute;
+                right: -20px;
+                top: -20px;
+            }
+            .close a{
+                padding: .2em;
+                display: block;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                padding-top: .4em;
+                color: white;
+            }
+            .popup-tittle {
+                text-align: center;
+                margin-top: 1em;
+                color: #24c0de;
+            }
+            
+            @media (max-width: 800px){ 
+                .content-1{
+
+                margin-top: 5em ;
+                    
+            }
+                .close{
+
+                right: 10px;
+                top: 10px;
+            }
+            }
+            
+            @media (max-height: 700px){ 
+                .content-1{
+
+                margin-top: 5em ;
+
+            }
+                .close{
+
+                right: 10px;
+                top: 10px;
+            }
+            }
         </style>
         
         
         
         <div id="popup">
             <div class="content-popup">
-                <div class="close"><a href="javascript:void(0)" id="close">X</a></div>
-                <div>
+                
+                <div class="content-1">
+                    <div class="close"><a href="javascript:void(0)" id="close">x</a></div>
+                    <h2 class="content-title popup-tittle subheading">Sobre Nosotros</h2>          
+                    <p >Sokrato nace como resultado de una “oportunidad”. Tras participar su fundador en un proyecto con tres prestigiosas empresas a nivel mundial se le asignó la parte del proyecto de liderazgo y coaching. Para poder implementar las necesidades que surgían en este nivel nació Sokrato como una herramienta, no como una empresa en sí misma.
+                    </p> 
+                    <p >Tras esta experiencia surgió un sueño, un “sueño de ojos abiertos”: crear una empresa más allá de tan solo una herramienta. Así nació Sokrato Management como empresa de tecnología e-bussines y cloud computing, desarrollando soluciones virtuales para diferentes áreas corporativas.</p>
                     <p class="grey">Todo ello debía tener unos estándares muy claros: sencillez, facilidad de uso, atractivas e innovadoras funciones y costos asequibles sin necesidad de altas inversiones.</p>
 
                     <p class="grey">Su nombre no es casual, considera a Sócrates como uno de los sabios de la antigüedad, le hacemos homenaje a este sabio.</p>
@@ -342,8 +413,8 @@
                         
                         <div class="col-md-4 col-sm-12 feature-column">
                             <div class="feature-icon">
-                                <i class="icon-eyeglasses size-2x highlight"></i>
-                                <i class="icon-eyeglasses back-icon"></i>
+                                <i class="icon-diseno size-2x highlight"></i>
+                                <i class="icon-diseno back-icon"></i>
                             </div>
                             <div class="feature-info">
                                 <h4>Diseño página web</h4>
@@ -352,8 +423,8 @@
                         </div>
                         <div class="col-md-4 col-sm-12 feature-column">
                             <div class="feature-icon">
-                                <i class="icon-lock-open size-2x highlight"></i>
-                                <i class="icon-lock-open back-icon"></i>
+                                <i class="icon-identidad size-2x highlight"></i>
+                                <i class="icon-identidad back-icon"></i>
                             </div>
                             <div class="feature-info">
                                 <h4>Identidad visual</h4>
@@ -362,8 +433,8 @@
                         </div>
                         <div class="col-md-4 col-sm-12 feature-column">
                             <div class="feature-icon">
-                                <i class="icon-energy size-2x highlight"></i>
-                                <i class="icon-energy back-icon"></i>
+                                <i class="icon-mobile size-2x highlight"></i>
+                                <i class="icon-mobile back-icon"></i>
                             </div>
                             <div class="feature-info">
                                 <h4>Aplicaciones móviles</h4>
@@ -378,8 +449,8 @@
                         
                         <div class="col-md-4 col-sm-12 feature-column">
                             <div class="feature-icon">
-                                <i class="icon-settings size-2x highlight"></i>
-                                <i class="icon-settings back-icon"></i>
+                                <i class="icon-correo size-2x highlight"></i>
+                                <i class="icon-correo back-icon"></i>
                             </div>
                             <div class="feature-info">
                                 <h4>Diseño de correos institucionales</h4>
@@ -389,8 +460,8 @@
                         </div>
                         <div class="col-md-4 col-sm-12 feature-column">
                             <div class="feature-icon">
-                                <i class="icon-book-open size-2x highlight"></i>
-                                <i class="icon-book-open back-icon"></i>
+                                <i class="icon-consuta size-2x highlight"></i>
+                                <i class="icon-consuta back-icon"></i>
                             </div>
                             <div class="feature-info">
                                 <h4>Consultoría o asesoramiento de identidad e imagen visual</h4>
@@ -400,8 +471,8 @@
                         </div>
                         <div class="col-md-4 col-sm-12 feature-column">
                             <div class="feature-icon">
-                                <i class="icon-support size-2x highlight"></i>
-                                <i class="icon-support back-icon"></i>
+                                <i class="icon-programacion size-2x highlight"></i>
+                                <i class="icon-programacion back-icon"></i>
                             </div>
                             <div class="feature-info">
                                 <h4>Programación de páginas webs y aplicaciones webs</h4>
@@ -427,7 +498,7 @@
                             
 				            
                             
-                            <div><a id="open-tcl" class="btn btn-primary btn-scroll cd-popup-trigger">leer más</a></div>
+                            <div class="margin-button1"><a id="open-tcl" class="btn btn-primary btn-scroll cd-popup-trigger">leer más</a></div>
  
                             
                             
@@ -436,7 +507,9 @@
                         
                         <div class="col-md-6 wow fadeInUp">
                             <div class="video-container">
-                                <iframe src="http://player.vimeo.com/video/115919099?title=0&amp;byline=0&amp;portrait=0&amp;color=fff" allowfullscreen></iframe>
+                                <video width="100%" controls>
+                                  <source src="video/sobrenosotros.mp4" type="video/mp4">
+                                </video>
                             </div>
                         </div>
 
@@ -651,10 +724,10 @@
                             <div class="col-md-2 col-sm-3 col-xs-6 client wow fadeInUp">
                                 <a href="#">
                                     <div class="logo-dark">
-                                        <img src="img/enterprise/agape.png" alt="client">
+                                        <img src="img/enterprise/agape-g.png" class="img-responsive" alt="client">
                                     </div>
                                     <div class="logo-light">
-                                        <img src="img/enterprise/agape.png" alt="client">
+                                        <img src="img/enterprise/agape.png" class="img-responsive" alt="client">
                                     </div>
                                 </a>    
                             </div>
@@ -662,10 +735,10 @@
                             <div class="col-md-2 col-sm-3 col-xs-6 client wow fadeInUp">
                                 <a href="#">
                                     <div class="logo-dark">
-                                        <img src="img/enterprise/corripio.svg" class="img-responsive" alt="client">
+                                        <img src="img/enterprise/corripio-g.png" class="img-responsive" alt="client">
                                     </div>
                                     <div class="logo-light">
-                                        <img src="img/enterprise/corripio.svg" class="img-responsive" alt="client">
+                                        <img src="img/enterprise/corripio.png" class="img-responsive" alt="client">
                                     </div>
                                 </a>    
                             </div>
@@ -673,18 +746,18 @@
                             <div class="col-md-2 col-sm-3 col-xs-6 client wow fadeInUp">
                                 <a href="#">
                                     <div class="logo-dark">
+                                        <img src="img/enterprise/hanes-g.png" class="img-responsive" alt="client">
+                                    </div>
+                                    <div class="logo-light">
                                         <img src="img/enterprise/hanes.png" class="img-responsive" alt="client">
                                     </div>
-                                    <div class="logo-light">
-                                        <img src="img/enterprise/hanes.png" class="img-responsive" alt="client">
-                                    </div>
                                 </a>    
                             </div>
                             
                             <div class="col-md-2 col-sm-3 col-xs-6 client wow fadeInUp">
                                 <a href="#">
                                     <div class="logo-dark">
-                                        <img src="img/enterprise/jmb.png" class="img-responsive" alt="client">
+                                        <img src="img/enterprise/jmb-g.png" class="img-responsive" alt="client">
                                     </div>
                                     <div class="logo-light">
                                         <img src="img/enterprise/jmb.png" class="img-responsive" alt="client">
@@ -695,10 +768,10 @@
                             <div class="col-md-2 col-sm-3 col-xs-6 client wow fadeInUp">
                                 <a href="#">
                                     <div class="logo-dark">
-                                        <img src="img/enterprise/logoadv.svg" class="img-responsive" alt="client">
+                                        <img src="img/enterprise/adventure-g.png" class="img-responsive" alt="client">
                                     </div>
                                     <div class="logo-light">
-                                        <img src="img/enterprise/logoadv.svg" class="img-responsive" alt="client">
+                                        <img src="img/enterprise/adventure.png" class="img-responsive" alt="client">
                                     </div>
                                 </a>    
                             </div>
@@ -706,10 +779,10 @@
                             <div class="col-md-2 col-sm-3 col-xs-6 client wow fadeInUp">
                                 <a href="#">
                                     <div class="logo-dark">
-                                        <img src="img/enterprise/simetrica.svg" class="img-responsive" alt="client">
+                                        <img src="img/enterprise/simetrica-g.png" class="img-responsive" alt="client">
                                     </div>
                                     <div class="logo-light">
-                                        <img src="img/enterprise/simetrica.svg" class="img-responsive" alt="client">
+                                        <img src="img/enterprise/simetrica.png" class="img-responsive" alt="client">
                                     </div>
                                 </a>    
                             </div>
@@ -723,69 +796,7 @@
             <!-- End Clients Section -->        
             
             <!-- Start Testimonials Section -->   
-            <section id="testimonials" class="parallax-section-7">
-                <div class="container">
-                    <div class="row">
-                        
-                        <div class="col-md-12 text-center">
-                            <h3 class="section-title white wow fadeInUp">What clients say.</h3>
-                            <p class="subheading grey wow fadeInUp">Hear what over <span class="highlight">4000 satisfied</span> customers say about us!</p>
-                        </div>
-                        
-                        <div class="col-md-12 text-center wow fadeInUp">
-                            <div id="owl-testimonials" class="owl-carousel">
-                                
-                                <div>
-                                    <div class="testimonial">
-                                        <i class="icon-left ion-quote ion-2x highlight"></i>
-                                            <span> 
-                                                This guys are amazing! They were so quick to respond and let me tell you... they are all knowing!<br>I highly recommend their themes! They are all about making their clients happy.
-                                            </span>
-                                        <i class="icon-right ion-quote ion-2x highlight"></i>
-                                    </div>
-                                    <div class="testimonial-name">
-                                        <img src="img/clients/client-1.png" alt="client">
-                                        <h4 class="white">Jane Wanderful</h4>
-                                        <a href="#">www.wanderful.com</a>
-                                    </div>
-                                </div>
-                                
-                                <div>
-                                    <div class="testimonial">
-                                        <i class="icon-left ion-quote ion-2x highlight"></i>
-                                            <span>
-                                                This one is undoubtedly the best template I ever bought! Easy to edit, nicely coded and I highly recommend it.<br>It's wonderful design and also very fast and excelent support.
-                                            </span>
-                                        <i class="icon-right ion-quote ion-2x highlight"></i>
-                                    </div>
-                                    <div class="testimonial-name">
-                                        <img src="img/clients/client-2.png" alt="client">
-                                        <h4 class="white">Jack Smith</h4>
-                                        <a href="#">www.jsmith.com</a>
-                                    </div>
-                                </div>
-                                
-                                <div>
-                                    <div class="testimonial">
-                                        <i class="icon-left ion-quote ion-2x highlight"></i>
-                                            <span>
-                                                Vossen is well documented and well coded, but the best of all is the friendly and quick support behind it.<br>Vossen Design did a great and dedicated job. Thank you for this awesome theme!
-                                            </span>
-                                        <i class="icon-right ion-quote ion-2x highlight"></i>
-                                    </div>
-                                    <div class="testimonial-name">
-                                        <img src="img/clients/client-3.png" alt="client">
-                                        <h4 class="white">Joana Wunder</h4>
-                                        <a href="#">www.wunder.com</a>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div> 
-                        
-                    </div>
-                </div>
-            </section>
+           
             <!-- End Testimonials Section -->
             
             <!-- Start Contact Form Section -->    
@@ -932,16 +943,23 @@
         <script type="text/javascript">
         $(document).ready(function(){
           $('#open-tcl').on('click',function(){
-                $('.content-popup').fadeIn(1000);
-                $('#popup').fadeIn(1000);
-                return ;
+                $('.content-popup').show();
+                $('#popup').show();
+                $('body').css(
+                    "overflow", "hidden"
+                );
+               
             });
 
             $('#close').on('click',function(){
-                $('#popup').fadeOut(1000);
-                $('.popup-overlay').fadeOut(1000);
-                return ;
+                $('#popup').hide();
+                $('.popup-overlay').hide();
+                $('body').css(
+                    "overflow-y", "auto"
+                );
             });
+            
+
         });
         </script>                  
 	</body>
